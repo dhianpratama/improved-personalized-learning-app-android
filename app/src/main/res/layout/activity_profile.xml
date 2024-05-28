@@ -47,7 +47,7 @@
             android:id="@+id/textViewUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Username"
+            android:text="dhian"
             android:textColor="#FFFFFF"
             android:textSize="28sp"
             android:textStyle="bold"/>
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="username@example.com"
+            android:text="dhian@mail.com"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 

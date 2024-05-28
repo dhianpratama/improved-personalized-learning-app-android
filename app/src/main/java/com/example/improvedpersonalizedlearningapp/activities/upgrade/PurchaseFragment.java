@@ -1,5 +1,6 @@
 package com.example.improvedpersonalizedlearningapp.activities.upgrade;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,8 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 
 import com.example.improvedpersonalizedlearningapp.R;
+import com.example.improvedpersonalizedlearningapp.activities.main.MainActivity;
+import com.example.improvedpersonalizedlearningapp.activities.menu.MenuActivity;
 import com.stripe.android.ApiResultCallback;
 import com.stripe.android.PaymentConfiguration;
 import com.stripe.android.Stripe;
@@ -20,6 +23,7 @@ import com.stripe.android.view.CardInputWidget;
 
 
 public class PurchaseFragment extends Fragment {
+
     private CardInputWidget cardInputWidget;
     private Stripe stripe;
     AppCompatButton payButton;
@@ -55,7 +59,10 @@ public class PurchaseFragment extends Fragment {
                     new ApiResultCallback<Token>() {
                         @Override
                         public void onSuccess(@NonNull Token token) {
-                            Toast.makeText(requireContext(), "Token: " + token.getId(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(requireContext(), "Payment successful", Toast.LENGTH_SHORT).show();
+                            getActivity();
+                            Intent intent = new Intent(getActivity(), MenuActivity.class);
+                            startActivity(intent);
                         }
 
                         @Override
