@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="25dp">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/myProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/green_buttons"
+        android:textColor="@color/black"
+        android:text="MY PROFILE" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/historyButton"
+        android:layout_below="@id/myProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/green_buttons"
+        android:textColor="@color/black"
+        android:text="HISTORY" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/homeButton"
+        android:layout_below="@id/historyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/green_buttons"
+        android:textColor="@color/black"
+        android:text="HOME PAGE" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upgradeButton"
+        android:layout_below="@id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/green_buttons"
+        android:textColor="@color/black"
+        android:text="UPGRADE" />
+
+</RelativeLayout>

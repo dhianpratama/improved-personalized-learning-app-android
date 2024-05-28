@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewQuestion"
+    android:layout_below="@id/textViewTaskDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#146FD3"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Question 1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:text="You can use any question here and set up couple of answers"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewCorrectAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct Answer: Answer A"
+            android:layout_below="@id/textViewQuestion"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewUserAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Answer: Answer A"
+            android:layout_below="@id/textViewCorrectAnswer"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/incorrectAnswersLayout"
+            android:layout_below="@id/textViewUserAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

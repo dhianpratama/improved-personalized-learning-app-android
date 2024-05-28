@@ -1,0 +1,6 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background border -->
+    <item android:drawable="@drawable/dropdown_background" />
+    <!-- Vector drawable -->
+    <item android:drawable="@drawable/ic_dropdown" />
+</layer-list>

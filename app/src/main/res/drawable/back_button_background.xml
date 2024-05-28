@@ -1,0 +1,11 @@
+<!-- button_border.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Fill color -->
+            <solid android:color="#146FD3" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>
