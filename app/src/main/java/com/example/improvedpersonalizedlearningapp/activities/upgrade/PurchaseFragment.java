@@ -31,7 +31,7 @@ public class PurchaseFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        PaymentConfiguration.init(requireContext(), "pk_test_51PCKi0KL7fioSjeEEyqZLIGuARqfzEinVJVjwMzsIU01uY6hNHIVLYMnl1RGQSQgfII4Emx7fNcPZyzJ3L0HRzfh008QvHsxNl");
+        PaymentConfiguration.init(requireContext(), "pk_test_51PIQZxH9dQDo1ngnJOJyINVg5uRfczd0Eq6VFG5EHhsOsyNchpX5Mi68U79g8ZmslBbh0pnofNkSK9NCKFfyhAKC00EFn3VASh");
 
         stripe = new Stripe(requireContext(), PaymentConfiguration.getInstance(requireContext()).getPublishableKey());
     }
